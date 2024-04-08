@@ -6,28 +6,20 @@ import Footer from '../components/Footer.astro';
 
 <Layout title="Welcome to Astro.">
 	<Nav/>
-	<div class="container-fluid">
-        <div class="row ">
-            <div class="col-12">
-                <img src="https://placehold.it/1920x1080" alt="">
-            </div>
-        </div>
-    </div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-8">
+	<section class="container-fluid">
+		<div class="row vh-50">
+			<div class="col-8 d-flex justify-content-center align-items-center">
 				<h1>Jumbotron</h1>
 			</div>
-			<div class="col-4">
-				<img src="" alt="" class="jumbotrón">
+			<div class="col-4 bg-jumbotron">
 			</div>
 		</div>
-	</div>
+	</section>
 	<Footer/>
 </Layout>
 
 <style>
-	.jumbotrón{
+	.bg-jumbotron{
 		background-image: url("https://placehold.it/1080x566");
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -39,5 +31,8 @@ import Footer from '../components/Footer.astro';
         font-weight: <weight>;
         font-style: normal;
     }
+	.vh-50{
+		height: 50vh;
+	}
 </style>
-
+ 
